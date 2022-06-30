@@ -1,0 +1,21 @@
+.box_search {
+    float: left;
+    width: 80%;
+    padding: 0.1%;
+  }
+.box_apply {
+    float: left;
+    width: 20%;
+    padding: 0.1%;
+  }
+.box_min {
+    float: left;
+    width: 40%;
+    padding: 0.1%;
+  }
+.box_max {
+    float: left;
+    width: 40%;
+    padding: 0.1%;
+  }
+  

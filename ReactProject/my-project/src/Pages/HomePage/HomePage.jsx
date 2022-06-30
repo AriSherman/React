@@ -8,13 +8,12 @@ import Orders from '../../Components/Orders/Orders';
 import ProductsList from '../../Components/Products/ProductsList/ProductsList';
 import ViewProduct from '../../Components/Products/ViewProduct/ViewProduct';
 import LoginPage from '../../Components/LoginPage/LoginPage';
-import AdminPage from '../AdminPage/AdminPage';
 import About from '../../Components/About/About';
+import Logo from '../../assets/Logo.jpg';
 
 const HomePage = (props) =>{
     const ctx = useContext(Context);
     const navigate = useNavigate();
-    //console.log(ctx.productArr);
     const u = ctx.getUser();
     const handleUserConnection = () => {
         if(ctx.isLogdIn===true){
@@ -25,12 +24,10 @@ const HomePage = (props) =>{
     }
     return(
         <div className='main'>
-            <img src="../../../public/images/Logo.jpg" alt="Logo" />
-            <h1>Shermans Market</h1>
-            {<button onClick={handleUserConnection} className='button'>{ctx.isLogdIn===true ? "Log out" : "Log in"}</button>}
-            {ctx.isLogdIn===true && <Link to={'/orders/'+ ctx.getUser().email} className='user'>Hallo {ctx.getUser().userName} </Link>}
+            <img className='logo-img' src={Logo} alt="Logo" />
+            {<button onClick={handleUserConnection} className='button-logging btn btn-primary'>{ctx.isLogdIn===true ? "Log out" : "Log in"}</button>}
+            {ctx.isLogdIn===true && <Link to={'/orders/'+ ctx.getUser().email} className='user btn btn-outline-primary'>Hello {ctx.getUser().userName} </Link>}
             <Menu/>
-            {/* <image></image> */}
             <Routes>
                 <Route path='/' element = {<ProductsList />}/>
                 <Route path='/about' element = {<About/>}/>

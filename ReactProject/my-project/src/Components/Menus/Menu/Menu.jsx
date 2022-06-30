@@ -9,18 +9,25 @@ const Menu = () => {
     const ctx = useContext(Context);
 
     return (
-        <div className='menu'>
-            <ul>
-                <li><Link className="active" to={"/"}>HomePage</Link></li>
-                {ctx.ctg.map((cat) =>
-                    <li key={cat}><Link to={`/productsview/${cat}`}>{cat}</Link></li>
-                    )}
-                    <li style={{backgroundColor: '#008CBA'}}><Link style={{color: "white"}} to={"/about"}>About us</Link></li>
-                <li style={{float:"right", backgroundColor: '#008CBA'}}><Link style={{color: "white"}} to={"/cart"}>🛒 Cart</Link></li>
-                <li style={{float:"right"}}><SearchBar/></li>
-            </ul>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className='items d-flex flex-fill flex-column'>
+                <div className="collapse navbar-collapse p-2">
+                    <Link className="navbar-brand active" to={"/"}>HomePage</Link>
+                    <ul className="navbar-nav mr-auto p-2">
+                        {ctx.ctg.map((cat) =>
+                            <li className="nav-item" key={cat}><Link className="nav-link" to={`/productsview/${cat}`}>{cat}</Link></li>
+                        )}
+                        <li className="nav-item"><Link className="nav-link" to={"/about"}>About us</Link></li>
+                    </ul>
+                    <Link className='btn btn-outline-light btn-cart' to={"/cart"}>🛒 Cart</Link>                   
+                    <i className="bi bi-filter-square-fill" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"></i>
 
-        </div>
+                </div>
+                <div className="collapse p-2" id="navbarToggleExternalContent">
+                    <SearchBar /> 
+                </div>
+            </div>
+        </nav>
     );
 };
 

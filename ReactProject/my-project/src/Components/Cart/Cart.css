@@ -22,3 +22,18 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+.item .info {
+    padding: 7.8rem 0.5rem !important;
+}
+
+.item .info .btn {
+    margin-top: 0.5rem;
+}
+
+.item .img_c {
+    width: 40% !important;
+    max-height: 100% !important;
+}
+.card .qtyButtons .form-control {
+    width: 20rem;
+}

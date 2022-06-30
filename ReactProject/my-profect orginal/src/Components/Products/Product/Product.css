@@ -1,0 +1,111 @@
+.product{
+    width: 20%;
+}
+.img{
+    width: 80%;
+    max-height: 80%;
+}
+.name{
+    width: 100%;
+    /* font-size: large; */
+    background-color: #b7c4c7; 
+    border: none;
+    color: #000000;
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 6px 0px;
+    transition-duration: 0.5s;
+    cursor: pointer
+}
+.name a{
+    text-decoration: none;
+    color: inherit;
+}
+.name2 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #008CBA;
+  }
+  
+  .name2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+.id{
+    /* display: flexbox; */
+    display: inline-block;
+
+}
+.price{
+    /* display: flexbox; */
+    display: inline;
+}
+.line_p{
+    display:none;
+    margin-inline-end: 1vw;
+    margin-inline-start: 1vw;
+}
+
+
+.button{
+    background-color: #008CBA; 
+    border: none;
+    color: #fcfffc;
+    padding: 2px 17%;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin:auto;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  
+}
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+.qty{
+    display:inline;
+    margin-inline-end: 3%;
+}
+
+.qtyButtons{
+    display: flex;
+}
+
+
+ .plusMinusButten{
+    background-color: white; 
+    border: none;
+    color: #008CBA;
+    padding: 2px 2%;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin:auto;
+    transition-duration: 0.8s;
+    cursor: pointer;
+ }
+
+.plusMinusButten2{
+    background-color: #008CBA; 
+    color: white; 
+    border: 1px solid #008CBA;
+}
+.plusMinusButten2:hover{
+    background-color: #ffffff;
+    color: black;
+}

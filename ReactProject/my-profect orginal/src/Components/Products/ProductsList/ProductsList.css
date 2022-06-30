@@ -1,0 +1,15 @@
+.products{
+    min-height: calc(100vh - 400px);
+    max-width: 100%;
+}
+/* .products>div{
+    width: 20%;
+    margin: 1.5%;
+    text-align:center;
+    line-height: 80%;
+    font-size: 30px;
+  
+} */
+.card-columns {
+    column-count: 4;
+}

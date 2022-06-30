@@ -26,3 +26,14 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+.order-item .title {
+    font-size: 20px;
+}
+
+.order-completed {
+    margin: 150px;
+}
+
+.dark-header {
+    background-color: rgba(0,0,0,.1);
+}

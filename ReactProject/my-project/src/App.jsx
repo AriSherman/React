@@ -123,7 +123,7 @@ const getUser = () =>{
   const addToCart = (product, quantity) => {
     const exist = cart.find( x=> x.product.id === product.id );
     if(exist){
-      setCart(cart.map(x=> x.product.id === product.id ? {...exist,quantity: quantity} : x));
+      setCart(cart.map(x=> x.product.id === product.id ? {...exist,quantity: exist.quantity + quantity} : x));
       console.log("addToCart +");
     }else{
       setCart([...cart,{product:product,quantity:quantity}]);
@@ -216,9 +216,11 @@ const getUser = () =>{
 
       </Context.Provider>
       <ToastContainer />
-      <div className='footer_css'>
-      <footer>Copyright 2022 ©️ Shermans Markat, All rights reserved</footer>
-      </div>
+        <footer className="footer">
+          <div className="container">
+            <span className="text-muted">Copyright 2022 ©️ Shermans Markat, All rights reserved.</span>
+          </div>        
+        </footer>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useContext } from 'react';
 import { Context } from '../../shared/Context';
-import {Link, Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import MenuAdmin from '../../Components/Menus/MenuAdmin/MenuAdmin';
 import UsersView from '../../Components/UsersView/UsersView';
 import Catergoreis from '../../Components/Category/Categories/Catergoreis';
@@ -12,12 +12,13 @@ import Orders from '../../Components/Orders/Orders';
 import "./AdminPage.css";
 import EditOrder from '../../Components/Orders/EditOrder/EditOrder';
 
+
 const AdminPage = () => {
     const ctx = useContext(Context);
     return(
         <div>
             <h1>Lorem ipsum</h1>
-            <button onClick={() => ctx.logout()} className='button'>Log out</button>
+            <button onClick={() => ctx.logout()} className='btn-logout btn btn-primary'>Log out</button>
             {ctx.getUser().userType === "admin" && <MenuAdmin/>}
             {/* <image></image> */}
             <Routes>

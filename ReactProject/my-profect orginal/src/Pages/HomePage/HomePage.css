@@ -1,0 +1,20 @@
+
+.main{
+    width: 100%;
+}
+.user{
+float: right;;
+}
+.button {
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    
+    /* input has OS specific font-family */
+    color: rgb(34, 75, 95);
+    text-decoration: underline;
+    cursor: pointer;
+    float: right;;
+    margin-inline-end: 3%;
+  }
+  

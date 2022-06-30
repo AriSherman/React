@@ -12,12 +12,20 @@ const UsersView = (props) => {
         <div>
             {ctx.users.map(user =>{
                 return(
-                    <div key={user.email}>
-                        <h3>name {user.userName}</h3>   
-                        <h3>email {user.email}</h3>   
-                        <img src={user.pic} alt={user.userName}></img>   
-                        <h3>Type {user.userType}</h3>  
-                        <Link to={`/orders/${user.email}`}>Show Orders</Link>
+                    <div  key={user.email}>
+                        <ul className='list-unstyled'>
+                            <li class="media">
+                                <img className='media mt-3 img' src={require('../../assets/' + user.pic + '.jpg')} alt={user.userName + " profile img"}></img>   
+                                <div className='w-100 p-3'>
+                                    <h5>User Name: {user.userName}</h5>
+                                    <h5>email {user.email}</h5>
+                                    <h5>UserType: {user.userType}</h5>
+                                    <h4><Link className='btn btn-outline-secondary' to={`/orders/${user.email}`}>Show Orders</Link></h4>
+                                </div>                                       
+                            </li>
+                        </ul>
+                        <div>
+                        </div>
                         <hr/> 
                     </div>
                 )

@@ -1,14 +1,17 @@
-.box_search {
+ .box_search {
     float: left;
-    width: 80%;
+    width: 30% !important;
     padding: 0.1%;
   }
+  
 .box_apply {
     float: left;
-    width: 20%;
-    padding: 0.1%;
+    width: 8% !important;
   }
-.box_min {
+  .minmax {
+    margin-top: 0.5rem !important;
+  }
+/*.box_min {
     float: left;
     width: 40%;
     padding: 0.1%;
@@ -17,5 +20,5 @@
     float: left;
     width: 40%;
     padding: 0.1%;
-  }
+  } */
   

@@ -3,21 +3,21 @@
         "userName" : "Tiger",
         "password" : "1234",
         "email" : "tiger@gmail.com",
-        "pic" : "Tiger.png",
+        "pic" : "Tiger",
         "userType" : "user"
     },
     {
         "userName" : "Lion",
         "password" : "1234",
         "email" : "lion@gmail.com",
-        "pic" : "Lion.jpg",
+        "pic" : "Lion",
         "userType" : "user"
     },
     {
         "userName" : "eylon",
         "password" : "6666",
         "email" : "eylon@gmail.com",
-        "pic" : "",
+        "pic" : "Eylon",
         "userType" : "admin"
     }
 ]

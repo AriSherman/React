@@ -3,7 +3,7 @@
     width: 100%;
 }
 .user{
-float: right;;
+    float: right;
 }
 .button {
     padding: 0!important;
@@ -17,4 +17,10 @@ float: right;;
     float: right;;
     margin-inline-end: 3%;
   }
+  .button-logging {
+    float: right;
+  }
+.logo-img {
+    width: 25%;
+}
   

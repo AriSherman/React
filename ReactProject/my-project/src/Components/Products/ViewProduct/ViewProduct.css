@@ -22,3 +22,31 @@
     background-color: #008CBA;
     color: white;
   }
+
+  .product-img {
+    width:100%;
+  }
+
+  .view-product-container {
+    padding: 0px;
+    margin: 20px 0px;
+  }
+
+  .view-producr-card {
+    border: none;
+  }
+
+  .view-producr-card .price {
+    text-align: center;
+    margin: 15px 0px 5px 0px;
+  }
+  
+  .view-producr-card .id {
+    text-align: center;
+    align-self: center;
+    margin: 5px 0px 15px 0px;
+  }
+
+  .view-producr-card .name {
+    font-size: 30px;
+  }

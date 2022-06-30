@@ -27,23 +27,11 @@ const Product = (props) => {
 
     return (
         <div className='card text-center'>
-            <h3 className='name' ><Link to={'/viewproduct/'+props.id}>{props.name}</Link></h3>
+            <h3 className='name text-capitalize' ><Link to={'/viewproduct/'+props.id}>{props.name}</Link></h3>
             <img className='card-img-top img-fluid' src={props.img} alt={props.name}/>
             <h3 className='price'>Price: {props.price} ₪</h3>
             <p className='card-text'>SKU: {props.id}</p>
-            {/* <div className='qtyButtons'>
-            <label >Qty: </label>
-                <select className='form-control' value={Qty} onChange={handleQtySelect}>
-                    {ctx.options.map((option) => (
-                        <option value={option.value}>{option.label}</option>
-                    ))}
-                </select>
-
-                <button onClick={() => setQty(Qty + 1)} className="plusMinusButten plusMinusButten2">+</button>
-                <h5 className='qty' >Qty: {Qty} </h5>
-                <button onClick={() => removeButten()} className="plusMinusButten plusMinusButten2">-</button>
-            </div> */}
-            <button onClick={clickHandler} className='button button2'>Add to cart</button>
+            <button onClick={clickHandler} className='btn btn-primary btn-lg btn-block'>Add to cart</button>
             {ctx.isLogdIn === true && ctx.getUser().userType === "admin" && <Link to={'/prd/'+props.id}>Edit Product</Link>}
         </div>
     );
